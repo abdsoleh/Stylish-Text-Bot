@@ -13,24 +13,24 @@ async def start(c, m):
     # start text
     text = f"""Hey! {m.from_user.mention(style='md')},
 
-** I am Stylish Font Bot ✍️**
+** I am Stylish Bot 🤓**
 
-`I can help you to get stylish fonts. Just send me some text and see magic.`
+`Just send me some text and see what I can do.`
 
-** Developer by :** ❤️ ▷ [@ZauteKm](https://t.me/ZauteKm/346)
+** Owner : [@sparkysunny](https://t.me/sparkysunny/346)
 """
 
     # Buttons
     buttons = [
         [
-            InlineKeyboardButton('👥 Group', url=f"https://t.me/iZaute/5"),
-            InlineKeyboardButton('Channel 📢', url=f"https://t.me/iZaute/6")
+            InlineKeyboardButton('My Group✨', url=f"https://t.me/animefan_club777"),
+            InlineKeyboardButton('My Channel✨', url=f"https://t.me/moviesebseriesAnimes")
             ],[
-            InlineKeyboardButton('❤️ Credit', url=f"https://t.me/{owner_username}"),
-            InlineKeyboardButton('Bot Lists 🤖', url=f"https://t.me/iZaute/8"),
-            InlineKeyboardButton('GitHup 🤣', url=f"https://github.com/ZauteKm")
+            InlineKeyboardButton('Credit✨', url=f"https://t.me/Shoto_GirlFriend_777/346"),
+            InlineKeyboardButton('Helper✨', url=f"https://t.me/Mochi875/346"),
+            InlineKeyboardButton('Helper2✨ 🤣', url=f"https://t.me/cheater_01_02/346")
             ],[
-            InlineKeyboardButton('⚜️ Subscribe Now YouTube ⚜️', url=f"https://youtube.com/c/ZauteKm")
+            InlineKeyboardButton('Discord✨ ', url=f"https://discord.gg/HD7mHfX6")
         ]
     ]
     await m.reply_text(
@@ -71,7 +71,7 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('H̆̈ă̈p̆̈p̆̈y̆̈', callback_data='style+happy'),
         InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
         ],[
-        InlineKeyboardButton('Next ➡️', callback_data="nxt")
+        InlineKeyboardButton('Next⏩', callback_data="nxt")
     ]]
     if not cb:
         await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
@@ -108,7 +108,7 @@ async def nxt(c, m):
             InlineKeyboardButton('S̶t̶r̶i̶k̶e̶', callback_data='style+strike'),
             InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen')
             ],[
-            InlineKeyboardButton('⬅️ Back', callback_data='nxt+0')
+            InlineKeyboardButton('⏪Back', callback_data='nxt+0')
         ]]
         await m.answer()
         await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
